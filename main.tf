@@ -5,9 +5,9 @@ module "workspace-vending" {
   source  = "app.terraform.io/djs-tfcb/workspace-vending/tfe"
   version = "4.0.0"
 
-  tf_org = "djs-tfcb"
-  gh_org = "djschnei21"
-  oauth_client_name = "github-test"
+  tf_org = "mfonseca-org"
+  gh_org = "mikefons"
+  oauth_client_name = "Github.com"
 
   app_ids = [
     "001",
