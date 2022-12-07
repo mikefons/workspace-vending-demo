@@ -3,7 +3,7 @@ terraform {
 
 module "workspace-vending" {
   source  = "app.terraform.io/djs-tfcb/workspace-vending/tfe"
-  version = "3.0.0"
+  version = "3.0.1"
 
   app_ids = [
     "001"
