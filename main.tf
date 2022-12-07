@@ -2,7 +2,7 @@ terraform {
 }
 
 module "workspace-vending" {
-  source  = "app.terraform.io/djs-tfcb/workspace-vending/tfe"
+  source  = "app.terraform.io/mfonseca-org/workspace-vending/tfe"
   version = "4.0.0"
 
   tf_org = "mfonseca-org"
