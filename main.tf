@@ -3,7 +3,11 @@ terraform {
 
 module "workspace-vending" {
   source  = "app.terraform.io/djs-tfcb/workspace-vending/tfe"
-  version = "3.0.16"
+  version = "4.0.0"
+
+  tf_org = "djs-tfcb"
+  gh_org = "djschnei21"
+  oauth_client_name = "github-test"
 
   app_ids = [
     "001",
