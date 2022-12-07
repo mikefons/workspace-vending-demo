@@ -1,18 +1,10 @@
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-    }
-    doormat = {
-      source  = "doormat.hashicorp.services/hashicorp-security/doormat"
-      version = "~> 0.0.2"
-    }
-  }
 }
 
-provider "aws" {
-  access_key = data.doormat_aws_credentials.creds.access_key
-  secret_key = data.doormat_aws_credentials.creds.secret_key
-  token      = data.doormat_aws_credentials.creds.token
-  region     = ""
+module "workspace-vending" {
+  source  = "app.terraform.io/djs-tfcb/workspace-vending/tfe"
+  version = "1.0.0"
+
+  app_ids = ["001"]
+  app_envs = [ "development", "uat", "production" ]
 }
