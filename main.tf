@@ -12,7 +12,8 @@ module "workspace-vending" {
   app_ids = [
     "001",
     "002",
-    "003"
+    "003",
+    "004"
   ]
   app_envs = [ "development", "uat", "production" ]
 }
